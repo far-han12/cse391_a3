@@ -223,6 +223,7 @@ $stmt->close();
             id="appointment_date"
             name="appointment_date"
             value="<?php echo htmlspecialchars($selectedDate); ?>"
+                min="<?php echo htmlspecialchars($today); ?>"
             required
         >
 
@@ -299,6 +300,7 @@ $stmt->close();
                     id="appointment_date2"
                     name="appointment_date"
                     value="<?php echo htmlspecialchars($selectedDate); ?>"
+                        min="<?php echo htmlspecialchars($today); ?>"
                     required
                 >
             </div>
