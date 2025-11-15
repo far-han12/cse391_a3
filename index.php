@@ -80,14 +80,17 @@ $stmt->close();
             border: 1px solid #ccc;
             font-size: 14px;
         }
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .col-half {
-            flex: 1 1 48%;
-        }
+     .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;   /* 👈 horizontal space between Name and Phone */
+    row-gap: 15px;      /* vertical space between rows */
+}
+
+.col-half {
+    flex: 1 1 calc(50% - 10px);  /* leave room for the 20px gap */
+}
+
         .btn {
             margin-top: 15px;
             padding: 10px 18px;
